@@ -1,11 +1,11 @@
 # About
-* This is a PHP 7.4 Skeleton 
+* crypto api testing application
 * Laminas Mezzio
 * Doctrine
 * Twig
 * CI with travis
 * Docker
-* [![Build Status](https://travis-ci.org/s-ringert/skeleton.svg?branch=master)](https://travis-ci.org/s-ringert/skeleton)
+* [![Build Status](https://travis-ci.org/s-ringert/cryptocheck.svg?branch=master)](https://travis-ci.org/s-ringert/cryptocheck)
 
 # Setup
 * clone repo
