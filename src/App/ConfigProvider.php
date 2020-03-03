@@ -3,10 +3,16 @@ declare(strict_types=1);
 
 namespace App;
 
+use App\Handler\CryptoListHandler;
+use App\Handler\CryptoListHandlerFactory;
 use App\Handler\DemoPageHandler;
 use App\Handler\DemoPageHandlerFactory;
 use App\Handler\ListProductsHandler;
 use App\Handler\ListProductsHandlerFactory;
+use App\Service\CoingeckoService;
+use App\Service\CoingeckoServiceFactory;
+use App\Service\CryptoListService;
+use App\Service\CryptoListServiceFactory;
 use Doctrine\ORM\EntityManager;
 
 /**
@@ -45,7 +51,9 @@ class ConfigProvider
                 DemoPageHandler::class => DemoPageHandlerFactory::class,
                 EntityManager::class => Entity\Manager\EntityManagerFactory::class,
                 ListProductsHandler::class => ListProductsHandlerFactory::class,
-
+                CoingeckoService::class => CoingeckoServiceFactory::class,
+                CryptoListService::class => CryptoListServiceFactory::class,
+                CryptoListHandler::class => CryptoListHandlerFactory::class
             ],
         ];
     }

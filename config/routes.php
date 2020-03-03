@@ -36,4 +36,5 @@ return function (Application $app, MiddlewareFactory $factory, ContainerInterfac
     $app->get('/', App\Handler\DemoPageHandler::class, 'home');
     $app->get('/json', App\Handler\DemoJsonHandler::class, 'json');
     $app->get('/listProducts', App\Handler\ListProductsHandler::class, 'listProducts');
+    $app->get('/crypto/list',\App\Handler\CryptoListHandler::class,'cryptolist');
 };
